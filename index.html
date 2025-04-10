@@ -13,7 +13,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">ABOU</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Service </a></li>
                 <li><a href="#">Pricing</a></li>
@@ -21,5 +21,34 @@
             </ul>
         </nav>
     </header>
+
+    <img src="img/main1.jpg" class="slider" name="meat">
+
+    <script>
+
+    const image = document.getElementsByName("meat");
+    let img_array = ["img/main1.jpg", "img/main2.jpg", "img/main3.jpg"];
+    let index = 0;
+
+    function slide() {
+      document['meat'].src = img_array[index];
+      index++;
+      if (index >= img_array.length) {
+        index = 0;
+      }
+    }
+
+    setInterval(slide, 3000);
+
+    </script>
+
+    <section id="Check">
+        <h2>Check Recent Work</h2>
+        <div class="product">
+            <img src="img/color1.jpg" alt="">
+            <img src="img/color2.jpg" alt="">
+            <img src="img/color3.jpg" alt="">
+        </div>
+    </section>
 </body>
 </html>

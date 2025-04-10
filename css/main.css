@@ -4,12 +4,21 @@
 ul, li {list-style:none; margin:0; padding:0;}
 a {text-decoration: none;}
 
+body {background-color: rgb(50, 76, 34);}
+
 header {
-    width: 100%; height: 150px; margin: 0 auto;position: fixed; z-index: 5;
-    display: flex; justify-content: space-between; background-color: aquamarine;
+    width: 100%; height: 80px; margin: 0 auto;position: fixed; z-index: 3;
+    background-color: white; display: flex; justify-content: space-around; position: fixed;
     }
-.logo img{ width: 230px; height: 143px; }
-nav {width: 660px; height: 66px; background-color: chocolate;}
-nav ul {display: flex;}
+.logo img{width: 130px; height: 80px; display: flex; justify-content: center;}
+nav {width: 660px; height: 60px; padding-top: 10px; margin-top: 10px;}
+nav ul {display: flex; justify-content: center; align-items: center;}
 nav li {padding: 10px 20px;}
-nav a {color: blanchedalmond; font-size: 30px;}
+nav a { color: rgb(137, 14, 14); font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
+
+.slider {width: 100%; height: 960px; }
+
+#Check {margin: 0 auto; width: 1600px; height: 1000px; background-color: beige; }
+#Check .product {margin: 0 auto; margin-top: 200px; width: 1600px; height: 700px; background-color: aqua; display: flex; justify-content: space-around; }
+.product img {width: 520px; height: 700px;}
+#Check h2 {font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic;}
