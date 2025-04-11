@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>화류관</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -42,13 +43,61 @@
 
     </script>
 
-    <section id="Check">
+    <div id="Check">
         <h2>Check Recent Work</h2>
-        <div class="product">
-            <img src="img/color1.jpg" alt="">
-            <img src="img/color2.jpg" alt="">
-            <img src="img/color3.jpg" alt="">
+        <div id="button">
+            <button class="a">basic</button>
+            <span>|</span>
+            <button>Signature</button>
+            <span>|</span>
+            <button>Vintage Wedding</button>
         </div>
-    </section>
+        <div id="product">
+            <div class="color">
+                <img src="img/color5.jpg" alt="">
+                <img src="img/color1.jpg" alt="">
+            </div>
+
+            <div class="si">
+                <img src="img/si1.jpg" alt="">
+                <img src="img/si2.jpg" alt="">
+            </div>
+
+            <div class="vin">
+                <img src="img/vin1.jpg" alt="">
+                <img src="img/vin2.jpg" alt="">
+            </div>
+
+            <script>
+               
+               $(function () {
+                    $('#Check button:nth-of-type(1)').click(function () {
+                        $('.color').fadeIn();
+                        $('.si').hide();
+                        $('.vin').hide();
+                    });
+                    $('#Check button:nth-of-type(2)').click(function () {
+                        $('.si').fadeIn();
+                        $('.color').hide();
+                        $('.vin').hide();
+                    });
+                    $('#Check button:nth-of-type(3)').click(function () {
+                        $('.vin').fadeIn();
+                        $('.color').hide();
+                        $('.si').hide();
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+    <div id="pr">
+        <h2>Price List</h2>
+        <div class="img">]
+            <img src="img/pr1.jpg" alt="">
+            <img src="img/pr2.jpg" alt="">
+            <img src="img/pr3.jpg" alt="">
+        </div>
+    </div>
 </body>
 </html>

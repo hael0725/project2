@@ -16,9 +16,27 @@ nav ul {display: flex; justify-content: center; align-items: center;}
 nav li {padding: 10px 20px;}
 nav a { color: rgb(137, 14, 14); font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
 
-.slider {width: 100%; height: 960px; }
+.slider {width: 100%; height: 100%; margin-top: 30px;}
 
-#Check {margin: 0 auto; width: 1600px; height: 1000px; background-color: beige; }
-#Check .product {margin: 0 auto; margin-top: 200px; width: 1600px; height: 700px; background-color: aqua; display: flex; justify-content: space-around; }
-.product img {width: 520px; height: 700px;}
-#Check h2 {font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic;}
+/* 작업물 */
+#Check {margin: 0 auto; width: 1400px; height: 800px; margin-top: 200px; background-color: rgba(250, 235, 215, 0);}
+#Check .product {margin: 0 auto; width: 100%; height: 700px;  display: flex; justify-content: center;}
+#product img {margin: 0 5px}
+/* 컬러 이미지 */
+.color img:first-child {width: 911px; height: 600px;}
+.color img:nth-child(2) {width: 440px; height: 600px;}
+/* 시그니처 이미지 */
+.si img:nth-child(2) {width: 911px; height: 600px;}
+.si img:first-child {width: 440px; height: 600px;}
+/* 빈티지 이미지 */
+.vin img:first-child {width: 600px; height: 600px;}
+.vin img:nth-child(2) {width: 754px; height: 600px;}
+
+#Check h2 {margin: 0 auto; width: 450px; height: 55px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 45px; font-weight: lighter;;}
+#button { margin: 30px; }
+#button span {color: white;}
+#button button {background-color: rgba(143, 84, 84, 0); border: none; font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer;}
+
+.si, .vin {display: none;}
+
+/* 가격표 */
