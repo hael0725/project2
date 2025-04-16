@@ -1,4 +1,17 @@
 @charset "utf-8";
+@font-face {
+    font-family: 'GenKJwajinOTF-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GenKJwajinOTF-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 ul, li {list-style:none; margin:0; padding:0;}
@@ -14,14 +27,21 @@ header {
 nav {width: 660px; height: 60px; padding-top: 10px; margin-top: 10px;}
 nav ul {display: flex; justify-content: center; align-items: center;}
 nav li {padding: 10px 20px;}
-nav a { color: rgb(137, 14, 14); font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
+nav a { color: rgb(137, 14, 14); font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
+nav a:hover {color: red;}
 
-.slider {width: 100%; height: 100%; margin-top: 30px;}
+.slider {width: 100%; height: 100%; margin-top: 60px;}
 
 /* 작업물 */
-#Check {margin: 0 auto; width: 1400px; height: 800px; margin-top: 200px; background-color: rgba(250, 235, 215, 0);}
-#Check .product {margin: 0 auto; width: 100%; height: 700px;  display: flex; justify-content: center;}
+#Check {margin: 0 auto; width: 1400px; height: 800px; margin-top: 200px;}
+#product {margin: 0 auto; width: 100%; height: 700px;  display: flex; justify-content: center;}
 #product img {margin: 0 5px}
+#Check h2 {margin: 0 auto; width: 450px; height: 55px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 45px; font-weight: lighter;}
+#button { margin: 30px; }
+#button span {color: white;}
+#button button {background-color: rgba(143, 84, 84, 0); border: none; font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer;}
+
+
 /* 컬러 이미지 */
 .color img:first-child {width: 911px; height: 600px;}
 .color img:nth-child(2) {width: 440px; height: 600px;}
@@ -31,12 +51,21 @@ nav a { color: rgb(137, 14, 14); font-size: 20px; font-family: Georgia, 'Times N
 /* 빈티지 이미지 */
 .vin img:first-child {width: 600px; height: 600px;}
 .vin img:nth-child(2) {width: 754px; height: 600px;}
-
-#Check h2 {margin: 0 auto; width: 450px; height: 55px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 45px; font-weight: lighter;;}
-#button { margin: 30px; }
-#button span {color: white;}
-#button button {background-color: rgba(143, 84, 84, 0); border: none; font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer;}
-
 .si, .vin {display: none;}
 
 /* 가격표 */
+#pr h2 {width: 300px; text-align: center; height: 50px; margin: 0 auto; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 45px; font-weight: lighter; margin-top: 100px;}
+#primg {display: flex; justify-content: center; margin-top: 60px;}
+#primg img {width: 400px; height: 522px;}
+#primg p {font-family: Georgia, 'Times New Roman', Times, serif; color: #fff; font-size: 20px;}
+#primg span {color: #fff; font-family: 'Times New Roman', Times, serif;}
+.b, .s, .v {margin: 0 25px;}
+
+/* 어바웃 스토리 */
+#about {width: 100%; height: 800px; background-color: #fff; margin-top: 100px;}
+.story {margin: 0 auto; width: 1400px; height: 800px; background-color: beige; display: flex;}
+.story img {height: 800px;}
+.text {padding: 150px 100px;}
+.text h2 {font-size: 35px; color: rgb(137, 14, 14); font-family: Georgia; font-style: italic;}
+.text h3 {font-family: 'KyoboHandwriting2020A'; font-weight: 500; font-size: 40px; background-color: rgba(255, 228, 196, 0); padding: 40px 0;}
+.text p {font-size: 20px; line-height: 40px;  letter-spacing: 1.5px; font-family: 'KyoboHandwriting2020A';}
