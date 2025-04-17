@@ -8,8 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
 
+    
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -26,26 +30,37 @@
             </ul>
         </nav>
     </header>
+    <section id="main">
+        <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-    <img src="img/main1.jpg" class="slider" name="meat">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-
-    const image = document.getElementsByName("meat");
-    let img_array = ["img/main1.jpg", "img/main2.jpg", "img/main3.jpg"];
-    let index = 0;
-
-    function slide() {
-      document['meat'].src = img_array[index];
-      index++;
-      if (index >= img_array.length) {
-        index = 0;
-      }
-    }
-
-    setInterval(slide, 3000);
-
-    </script>
+        var swiper = new Swiper("#main .mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 
     <div id="Check">
         <h2>Check Recent Work</h2>
@@ -97,24 +112,48 @@
 
     <section id="pr">
         <h2>Price List</h2>
-        <div id="primg">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/pr1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/card1.jpg" alt=""></div>
+            </div>
             <div class="b">
-                <img src="img/pr1.jpg" alt="">
                 <p>Basic(color)</p>
                 <span>₩ 150,000</span>
             </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/pr2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/card2.jpg" alt=""></div>
+            </div>
             <div class="s">
-                <img src="img/pr2.jpg" alt="">
                 <p>Signature</p>
                 <span>₩ 200,000</span>
             </div>
+          </div>
+        
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/pr3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="img/card3.jpg" alt=""></div>
+            </div>
             <div class="v">
-                <img src="img/pr3.jpg" alt="">
                 <p>Vintage Wedding</p>
                 <span>₩ 250,000</span>
             </div>
-        </div>
+          </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper("#pr .mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
 
     <div id="about">
         <div class="story">
@@ -132,6 +171,11 @@
                     지금, 당신의 가장 찬란한 순간을 화류관에서 만나보세요.</p>
                 </div>
         </div>
+    </div>
+
+    <div id="review">
+      <h2>Customer Reviews </h2>
+      <img src="img/back.jpg" alt="">
     </div>
 </body>
 </html>
