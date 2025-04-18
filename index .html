@@ -1,181 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>화류관</title>
-    <!-- 폰트 -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화류관</title>
+  <!-- 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
 
-    
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-        <a href="#"><img src="img/logo2.png" alt=""></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="https://www.instagram.com/hwaryugwan/?img_index=1">Insta</a></li>
-                <li><a href="http://pf.kakao.com/_xgbxkxcK">Reserve</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="main">
-        <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
-        </div>
-        <div class="swiper-pagination"></div>
+  <header>
+    <div class="logo">
+      <a href="#"><img src="img/logo2.png" alt=""></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="https://www.instagram.com/hwaryugwan/?img_index=1">Insta</a></li>
+        <li><a href="http://pf.kakao.com/_xgbxkxcK">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/main2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/main3.jpg" alt=""></div>
       </div>
-    </section>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        var swiper = new Swiper("#main .mySwiper", {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+  <script>
+    var swiper = new Swiper("#main .mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <div id="Check">
+    <h2>Check Recent Work</h2>
+    <div id="button">
+      <button id="b1">Basic</button>
+      <span>|</span>
+      <button id="b2">Signature</button>
+      <span>|</span>
+      <button id="b3">Vintage Wedding</button>
+    </div>
+    <div id="product">
+      <div class="color">
+        <img src="img/color5.jpg" alt="">
+        <img src="img/color1.jpg" alt="">
+      </div>
+
+      <div class="si">
+        <img src="img/si1.jpg" alt="">
+        <img src="img/si2.jpg" alt="">
+      </div>
+
+      <div class="vin">
+        <img src="img/vin1.jpg" alt="">
+        <img src="img/vin2.jpg" alt="">
+      </div>
+
+      <script>
+
+        $(function () {
+          $('#Check button:nth-of-type(1)').click(function () {
+            $('.color').fadeIn();
+            $('.si').hide();
+            $('.vin').hide();
+
+            $('#b1').css('text-decoration','underline');
+            $('#b2').css('text-decoration','none');
+            $('#b3').css('text-decoration','none');
+          });
+          $('#Check button:nth-of-type(2)').click(function () {
+            $('.si').fadeIn();
+            $('.color').hide();
+            $('.vin').hide();
+
+            $('#b2').css('text-decoration','underline');
+            $('#b1').css('text-decoration','none');
+            $('#b3').css('text-decoration','none');
+          });
+          $('#Check button:nth-of-type(3)').click(function () {
+            $('.vin').fadeIn();
+            $('.color').hide();
+            $('.si').hide();
+
+            $('#b3').css('text-decoration','underline');
+            $('#b1').css('text-decoration','none');
+            $('#b2').css('text-decoration','none');
+          });
         });
       </script>
+    </div>
+  </div>
 
-    <div id="Check">
-        <h2>Check Recent Work</h2>
-        <div id="button">
-            <button class="a">Basic</button>
-            <span>|</span>
-            <button>Signature</button>
-            <span>|</span>
-            <button>Vintage Wedding</button>
-        </div>
-        <div id="product">
-            <div class="color">
-                <img src="img/color5.jpg" alt="">
-                <img src="img/color1.jpg" alt="">
-            </div>
-
-            <div class="si">
-                <img src="img/si1.jpg" alt="">
-                <img src="img/si2.jpg" alt="">
-            </div>
-
-            <div class="vin">
-                <img src="img/vin1.jpg" alt="">
-                <img src="img/vin2.jpg" alt="">
-            </div>
-
-            <script>
-               
-               $(function () {
-                    $('#Check button:nth-of-type(1)').click(function () {
-                        $('.color').fadeIn();
-                        $('.si').hide();
-                        $('.vin').hide();
-                    });
-                    $('#Check button:nth-of-type(2)').click(function () {
-                        $('.si').fadeIn();
-                        $('.color').hide();
-                        $('.vin').hide();
-                    });
-                    $('#Check button:nth-of-type(3)').click(function () {
-                        $('.vin').fadeIn();
-                        $('.color').hide();
-                        $('.si').hide();
-                    });
-                });
-            </script>
-        </div>
+  <section id="pr">
+    <h2>Price List</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/pr1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/card1.jpg" alt=""></div>
+      </div>
+      <div class="b">
+        <p>Basic(color)</p>
+        <span>₩ 150,000</span>
+      </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/pr2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/card2.jpg" alt=""></div>
+      </div>
+      <div class="s">
+        <p>Signature</p>
+        <span>₩ 200,000</span>
+      </div>
     </div>
 
-    <section id="pr">
-        <h2>Price List</h2>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/pr1.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="img/card1.jpg" alt=""></div>
-            </div>
-            <div class="b">
-                <p>Basic(color)</p>
-                <span>₩ 150,000</span>
-            </div>
-        </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/pr2.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="img/card2.jpg" alt=""></div>
-            </div>
-            <div class="s">
-                <p>Signature</p>
-                <span>₩ 200,000</span>
-            </div>
-          </div>
-        
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/pr3.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="img/card3.jpg" alt=""></div>
-            </div>
-            <div class="v">
-                <p>Vintage Wedding</p>
-                <span>₩ 250,000</span>
-            </div>
-          </div>
-    </section>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/pr3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/card3.jpg" alt=""></div>
+      </div>
+      <div class="v">
+        <p>Vintage Wedding</p>
+        <span>₩ 250,000</span>
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper("#pr .mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+  <div id="about">
+    <div class="story">
+      <img src="img/about.jpg" alt="">
+      <div class="text">
+        <h2>About the Studio</h2>
+        <h3>화류관(<span
+            style="color: rgb(137, 14, 14); font-size: 30px; font-weight: bold; font-family: 'Noto Serif SC';"> 花柳馆
+          </span>)</h3>
+        <p> ‘흐르는 꽃처럼 순간을 기록하다’는 뜻을 담아, <br>
+          당신의 찰나를 가장 아름답게 담아내는 감성 사진관입니다. <br>
+          한 장의 사진이 평생의 기억이 되듯, 화류관은 일상 속 소중한 순간을 영화처럼 기록합니다. <br>
+          <br>
+          한복 화보부터 빈티지 웨딩, 감성 인물 사진까지. <br>
+          각자의 이야기가 자연스럽게 스며든 사진을 담아드립니다. <br>
+          <br>
+          지금, 당신의 가장 찬란한 순간을 화류관에서 만나보세요.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="review">
+    <h2>Customer Reviews </h2>
+
+    <div class="review_img">
+
+      <div class="review_box" id="review_1">
+        <img src="img/r1.png" alt="#">
+        <p>스튜디오가 빈티지스럽고 예뻐요~<br>
+          촬영해주시는 분 에너지가 좋아 기분 좋게했습니다!
+        </p>
+      </div>
+
+      <div class="review_box" id="review_2">
+        <img src="img/r2.png" alt="#">
+        <p>작가님들 다 너무 친절하시고 사진도 최고예요!!<br>
+          스튜디오 예쁜건 두말하면 입아픕니다(.>_<.) <br>
+            조만간 또 예쁜 사진 남기러 가겠습니다!❤️🖤❤️
+        </p>
+      </div>
+
+      <div class="review_box" id="review_3">
+        <img src="img/r3.png" alt="#">
+        <p>여지껏 다녀본 사진관중에 최고입니다. <br>
+          분위기도 편하게 해주시고, 사진도 바로 보고 고를 수 있어서 좋습니다.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="radio">
+      <div class="ra" id="btn1"> </div>
+      <div class="ra" id="btn2"> </div>
+      <div class="ra" id="btn3"> </div>
+    </div>
     <script>
-      var swiper = new Swiper("#pr .mySwiper", {
-        effect: "cards",
-        grabCursor: true,
+      $(function () {
+        $('#btn1').click(function () {
+          $('#review_1').fadeIn();
+          $('#review_2').hide();
+          $('#review_3').hide();
+
+          $('#btn1').css('background-color', 'rgb(137, 14, 14)');
+          $('#btn3').css('background-color', 'white');
+          $('#btn2').css('background-color', 'white');
+
+        });
+
+        $('#btn2').click(function () {
+          $('#review_2').fadeIn();
+          $('#review_1').hide();
+          $('#review_3').hide();
+
+          $('#btn2').css('background-color', 'rgb(137, 14, 14)');
+          $('#btn1').css('background-color', 'white');
+          $('#btn3').css('background-color', 'white');
+        });
+
+        $('#btn3').click(function () {
+          $('#review_3').fadeIn();
+          $('#review_1').hide();
+          $('#review_2').hide();
+
+          $('#btn3').css('background-color', 'rgb(137, 14, 14)');
+          $('#btn1').css('background-color', 'white');
+          $('#btn2').css('background-color', 'white');
+        });
       });
     </script>
+  </div>
 
-    <div id="about">
-        <div class="story">
-                <img src="img/about.jpg" alt="">
-                <div class="text">
-                <h2>About the Studio</h2>
-                <h3>화류관(<span style="color: rgb(137, 14, 14); font-size: 30px; font-weight: bold; font-family: 'Noto Serif SC';"> 花柳馆 </span>)</h3>
-                <p> ‘흐르는 꽃처럼 순간을 기록하다’는 뜻을 담아, <br>
-                    당신의 찰나를 가장 아름답게 담아내는 감성 사진관입니다. <br>
-                    한 장의 사진이 평생의 기억이 되듯, 화류관은 일상 속 소중한 순간을 영화처럼 기록합니다. <br>
-                    <br>
-                    한복 화보부터 빈티지 웨딩, 감성 인물 사진까지. <br>
-                    각자의 이야기가 자연스럽게 스며든 사진을 담아드립니다. <br>
-                    <br>
-                    지금, 당신의 가장 찬란한 순간을 화류관에서 만나보세요.</p>
-                </div>
+  <footer>
+    <div class="footer_box">
+      <div class="ABOUT_US">
+        <h1>ABOUT US</h1>
+        <p>
+          ‘흐르는 꽃처럼 순간을 기록하다’는 뜻을 담아,
+          당신의 찰나를 가장 아름답게 담아내는 감성 사진관입니다. <br>
+          한 장의 사진이 평생의 기억이 되듯,
+          화류관은 일상 속 소중한 순간을 영화처럼 기록합니다. <br>
+          <br>
+          한복 화보부터 빈티지 웨딩, 감성 인물 사진까지. <br>
+          각자의 이야기가 자연스럽게 스며든 사진을 담아드립니다. <br>
+          <br>
+          지금, 당신의 가장 찬란한 순간을 화류관에서 만나보세요.
+        </p>
+      </div>
+
+      <div class="hf">
+        <div class="have">
+          <h1>HAVE A QUESTIONS?</h1>
+          <i class="fa-solid fa-location-dot"></i><span>서울 중구 동호로34길 3-6 2층 화류관</span>
+          <br>
+          <i class="fa-solid fa-phone"></i><span>0507-1379-2907</span>
         </div>
-    </div>
 
-    <div id="review">
-      <h2>Customer Reviews </h2>
-      <img src="img/back.jpg" alt="">
+        <div class="fllow">
+          <h1>Follow Us</h1>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-comment"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+      </div>
     </div>
+  </footer>
 </body>
+
 </html>
