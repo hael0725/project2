@@ -1,19 +1,12 @@
 @charset "utf-8";
 
 @media all and (max-width:768px) {
-header {
-    width: 100%; height:8.5%; margin: 0 auto;position: fixed; z-index: 3;
-    background-color: rgb(255, 255, 255); display: flex; justify-content: space-around; position: fixed;
-    }
-.logo {width: 120px; height: auto; display: flex; justify-content: center;}
 nav {width: 100%; height: auto; padding-top: 10px; margin-top: 10px;}
-nav ul {display: flex; justify-content: flex-start; align-items: flex-start;}
-nav li {padding: 10px 10px;}
-nav a { color: rgb(137, 14, 14); font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
-nav a:hover {color: red;}
+nav li {padding: 10px 16px;}
+nav a {font-size: 17px;}
 
 /* 메인 슬라이더*/
-#main .swiper { width: 100%; height: 400px;}
+#main .swiper { width: 100%; height: 500px;}
 #main .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
 #main .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover; }
 #main .swiper-pagination .swiper-pagination-bullet {background-color: #fff; opacity: 1;}
@@ -21,97 +14,62 @@ nav a:hover {color: red;}
 
 /* 체크 */
 #Check {margin: 0 auto; width: 100%; height: 100%; margin-top: 50px;}
-#product {margin: 0 auto; width: 100%; height: 1000px;  display: flex; justify-content: center; background-color: aliceblue;}
-#product img {margin: 0 auto;}
+#product {width: 100%; height: auto;  display: flex;  margin-bottom: 50px;}
+#product img {width: 100%; padding: 0 30px; margin: 0;}
 #Check h2 {margin: 0 auto; width: 350px; height: 45px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 35px; line-height: 45px; font-weight: lighter;}
 #button { margin: 30px; text-align: center;}
 #button span {color: white;}
-#button button {background-color: rgba(143, 84, 84, 0); border: none; font-size: 15px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer;}
+#button button {border: none; font-size: 15px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer;}
 #button button:hover {text-decoration: underline;}
 #button #b1 {text-decoration: underline;}
 
 /* 컬러 이미지 */
-.color img:first-child {width: 80%; height: auto;}
-.color img:nth-child(2) {width: 80%; height: auto;}
+.color img:first-child {width: 70%; height: auto;}
+.color img:nth-child(2) {width: 70%; height: auto;}
 /* 시그니처 이미지 */
-.si img:nth-child(2) {width: 911px; height: 600px;}
-.si img:first-child {width: 440px; height: 600px;}
+.si img:nth-child(2) {width: 70%; height: auto;}
+.si img:first-child {width: 70%; height: auto;}
 /* 빈티지 이미지 */
-.vin img:first-child {width: 600px; height: 600px;}
-.vin img:nth-child(2) {width: 754px; height: 600px;}
+.vin img:first-child {width: 70%; height: auto;}
+.vin img:nth-child(2) {width: 70%; height: auto;}
 .si, .vin {display: none;}
 
 /* 가격표 */
   #pr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 1400px;
-    height: 800px;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
   }
   #pr .swiper {
-    width: 400px;
-    height: 522px;
+    margin: 7%;
   }
-  #pr .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-  }
- #pr p {font-family: Georgia, 'Times New Roman', Times, serif; color: #fff; font-size: 20px;}
- #pr span {color: #fff; font-family: 'Times New Roman', Times, serif;}
-
-#pr h2 {width: 100%; text-align: center; height: 50px; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 45px; font-weight: lighter; margin: 100px 564px 0;}
-.b, .s, .v {margin: 8px 0px;}
+ #pr h2 {width: 450px; height: 100%; border: 1px solid #fff; font-size: 25px;margin: 0 35vw;}
 
 
 /* 어바웃 스토리 */
-#about {width: 100%; height: 800px; background-color: #fff; margin: 200px 0 180px 0;}
-.story {margin: 0 auto; width: 1400px; height: 800px; background-color: rgba(245, 245, 220, 0); display: flex;}
-.story img {height: 800px;}
-.text {padding: 100px 100px;}   
-.text h2 {font-size: 35px; color: rgb(137, 14, 14); font-family: 'KyoboHandwriting2020A'; font-weight: lighter;}
-.text h3 {font-family: 'KyoboHandwriting2020A'; font-weight: 500; font-size: 40px; background-color: rgba(255, 228, 196, 0); padding: 40px 0;}
-.text p {font-size: 20px; line-height: 40px;  letter-spacing: 1.5px; font-family: 'KyoboHandwriting2020A';}
+#about {height: auto;}
+.story {width: 100%; height: auto; flex-direction: column;}
+.story img {width: 100%; height: 500px; object-fit: cover; object-position: 50% 15%;}
 
 /* 리뷰 */
-#review {width: 1600px; height: 800px; background-color: antiquewhite; margin: 0 auto; background-image: url(../img/back.jpg);  background-attachment: fixed; background-repeat: no-repeat; display: flex;  background-size: contain; background-position: 50%; align-items: center; justify-content: center; flex-direction: column; border-radius: 20px;}
-
-.review_img{width:500px; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center;}
-  #review h2{color: rgb(255, 255, 255); font-size: 55px; font-family: Georgia; font-style: italic;}
-  #review p{color:#fff; font-size:16px; text-align: center; line-height: 170%;}
-  .radio{ width:60px; display: flex; justify-content: space-around; margin:3px;}
-  .radio .ra{width:9px; height: 8px; border-radius: 70px; display: block;}
-  
-  #review_2{display: none;}
-  #review_3{display: none;}
-  .review_box {margin: 0 auto;}
-  .review_box img {width:300px; height: 300px;}
-  .ra{background-color: white;}
-    
-  #btn1 {background-color: rgb(137, 14, 14);}
+#review h2{font-size: 45px;}
+#review {width: 90%; height: 700px; margin: 0 auto; background-image: url(../img/back.jpg);  background-attachment: fixed; background-repeat: no-repeat; display: flex;  background-size: cover; background-position: 50%; align-items: center; justify-content: center; flex-direction: column; border-radius: 20px;}
 
 
-  /* 푸터 */
-  footer {width: 100%; height: 550px; background-color: #f7f7f7; margin-top: 150px;}
-  .footer_box {margin: 0 auto; width: 1600px; height: 550px; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 100px; display: flex;}
-  .footer_box h1 {font-family: 'Times New Roman', Times, serif; margin: 15px 0;}
-  
-  .ABOUT_US {line-height: 30px; width: 800px; background-color: rgba(127, 255, 212, 0); padding: 0 80px;}
-  .ABOUT_US p {font-size: 18px; font-family: 'RIDIBatang'; letter-spacing: 2px;}
 
-  .hf { width: 600px; padding: 0 100px; background-color: rgba(240, 248, 255, 0);}
-  .hf i {flex-direction: row; font-size: 15px; letter-spacing: 8px;}
 
-  .have span {line-height: 50px;}
+/* 푸터 */
+footer {width: 100%; height: auto; background-color: #f7f7f7; margin-top: 150px;}
+.footer_box {margin: 0 auto; width: 100%; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 100px 10px; display: flex;}
+.footer_box h1 {font-family: 'Times New Roman', Times, serif; margin: 15px 0; font-size: larger;}
 
-  .fllow {margin-top: 50px;}
-  .fllow i { font-size: 25px;}
+.ABOUT_US {line-height: 25px; width: auto; background-color: rgba(127, 255, 212, 0); padding-right: 40px;}
+.ABOUT_US p {font-size: medium; font-family: 'RIDIBatang';}
 
+.hf { width: 70%; padding: 0; background-color: rgba(159, 194, 224, 0);}
+.hf i {flex-direction: row; font-size: 15px; letter-spacing: 8px;}
+
+.have span {line-height: 40px; font-size: medium;}
+
+.fllow {margin-top: 6vw;}
+.fllow i { font-size: 20px;}
 }

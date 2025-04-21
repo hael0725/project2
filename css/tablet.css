@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@media all and (min-width:768px) and (max-width:1440px) {
+header {
+width: 100%; height: 80px; margin: 0 auto;position: fixed; z-index: 3;
+background-color: rgb(255, 255, 255); display: flex; justify-content: space-around; position: fixed;
+}
+.logo img{width: 130px; height: 80px; display: flex; justify-content: center;}
+nav {width: 660px; height: 60px; padding-top: 10px; margin-top: 10px;}
+nav ul {display: flex; justify-content: center; align-items: center;}
+nav li {padding: 10px 20px;}
+nav a { color: rgb(137, 14, 14); font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
+nav a:hover {color: red;}
+
+/* 메인 슬라이더*/
+#main .swiper { width: 100%; height: auto;}
+#main .swiper-slide {margin-top: 80px;  text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
+#main .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover; }
+#main .swiper-pagination .swiper-pagination-bullet {background-color: #fff; opacity: 1;}
+#main .swiper-pagination .swiper-pagination-bullet-active {background-color: rgb(175, 0, 0);}
+
+/* 체크 */
+#Check {margin: 0 auto; width: 100%; height: 100%; margin-top: 100px;}
+#product {height: auto;}
+#product img {width: 100%;  padding: 0 30px; margin: 0;}
+#button {text-align: center;}
+
+/* 컬러 이미지 */
+.color img:first-child {width: 80%; height: auto;}
+.color img:nth-child(2) {width: 80%; height: auto;}
+/* 시그니처 이미지 */
+.si img:nth-child(2) {width: 80%; height: auto;}
+.si img:first-child {width: 80%; height: auto;}
+/* 빈티지 이미지 */
+.vin img:first-child {width: 80%; height: auto;}
+.vin img:nth-child(2) {width: 80%; height: auto;}
+
+
+/* 가격표 */
+#pr {
+  width: 100%;
+  height: auto;
+}
+#pr .swiper {
+  width: 25vw;
+  height: 32vw;
+}
+
+#pr .swiper img {height: 105%;}
+
+#pr p {font-family: Georgia, 'Times New Roman', Times, serif; color: #fff; font-size: 20px;}
+#pr span {color: #fff; font-family: 'Times New Roman', Times, serif;}
+
+#pr h2 {width: 450px; height: 100%; border: 1px solid #fff; font-size: 35px;margin: 50px 35vw;}
+
+/* 어바웃 스토리 */
+#about {height: auto;}
+.story {width: 100%; height: auto; flex-direction: column;}
+.story img {width: 100%; height: 700px; object-fit: cover; object-position: 50% 15%;}
+
+/* 리뷰 */
+#review {width: 90%; height: 700px; margin: 0 auto; background-image: url(../img/back.jpg);  background-attachment: fixed; background-repeat: no-repeat; display: flex;  background-size: cover; background-position: 50%; align-items: center; justify-content: center; flex-direction: column; border-radius: 20px;}
+
+
+
+/* 푸터 */
+footer {width: 100%; height: auto; background-color: #f7f7f7; margin-top: 150px;}
+.footer_box {margin: 0 auto; width: 100%; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 100px 10px; display: flex;}
+.footer_box h1 {font-family: 'Times New Roman', Times, serif; margin: 15px 0; font-size: larger;}
+
+.ABOUT_US {width: auto; background-color: rgba(127, 255, 212, 0); padding-right: 40px;}
+.ABOUT_US p {font-size: medium; font-family: 'RIDIBatang';}
+
+.hf { width: 70%; padding: 0; background-color: rgba(159, 194, 224, 0);}
+.hf i {flex-direction: row; font-size: 15px; letter-spacing: 8px;}
+
+.have span {line-height: 40px; font-size: medium;}
+
+.fllow {margin-top: 6vw;}
+.fllow i { font-size: 20px;}
+
+}
