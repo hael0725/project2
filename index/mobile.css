@@ -1,13 +1,19 @@
 @charset "utf-8";
 
 @media all and (max-width:768px) {
-nav {width: 100%; height: auto; padding-top: 10px; margin-top: 10px;}
-nav li {padding: 10px 16px;}
-nav a {font-size: 17px;}
+  header {
+    width: 100%; height: 70px; margin: 0 auto; position: fixed; z-index: 3;
+    background-color: rgb(255, 255, 255); display: flex; justify-content: space-around; position: fixed;
+    }
+.logo {margin-top: 5px;}
+.logo img{width: 100px; height: auto; display: flex; justify-content: center;}
+nav {width: 100%; height: auto; padding-top: 5px; margin-top: 5px;}
+nav li {padding: 10px 3%;}
+nav a {font-size: 15px;}
 
 /* 메인 슬라이더*/
-#main .swiper { width: 100%; height: 500px;}
-#main .swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
+#main .swiper { width: 100%; height: auto;}
+#main .swiper-slide {margin-top: 70px; text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
 #main .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover; }
 #main .swiper-pagination .swiper-pagination-bullet {background-color: #fff; opacity: 1;}
 #main .swiper-pagination .swiper-pagination-bullet-active {background-color: rgb(175, 0, 0);}
@@ -49,26 +55,32 @@ nav a {font-size: 17px;}
 #about {height: auto;}
 .story {width: 100%; height: auto; flex-direction: column;}
 .story img {width: 100%; height: 500px; object-fit: cover; object-position: 50% 15%;}
+.text {padding: 80px 80px;}   
+.text h2 {font-size: 30px; color: rgb(137, 14, 14); font-family: 'KyoboHandwriting2020A'; font-weight: lighter;}
+.text h3 {font-family: 'KyoboHandwriting2020A'; font-weight: 500; font-size: 35px; background-color: rgba(255, 228, 196, 0); padding: 40px 0;}
+.text p {font-size: 16px; line-height: 30px;  letter-spacing: 1px; font-family: 'KyoboHandwriting2020A';}
 
 /* 리뷰 */
-#review h2{font-size: 45px;}
+.review_img{width:100%; height: auto; display: flex; align-items: center; justify-content: center; text-align: center;}
+#review h2{font-size: 35px;}
 #review {width: 90%; height: 700px; margin: 0 auto; background-image: url(../img/back.jpg);  background-attachment: fixed; background-repeat: no-repeat; display: flex;  background-size: cover; background-position: 50%; align-items: center; justify-content: center; flex-direction: column; border-radius: 20px;}
+#review p{color:#fff; font-size:14px; text-align: center; line-height: 170%;}
 
 
 
 
 /* 푸터 */
 footer {width: 100%; height: auto; background-color: #f7f7f7; margin-top: 150px;}
-.footer_box {margin: 0 auto; width: 100%; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 100px 10px; display: flex;}
+.footer_box {margin: 0 auto; width: 100%; height: 90%; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 80px 30px; display: flex;}
 .footer_box h1 {font-family: 'Times New Roman', Times, serif; margin: 15px 0; font-size: larger;}
 
-.ABOUT_US {line-height: 25px; width: auto; background-color: rgba(127, 255, 212, 0); padding-right: 40px;}
-.ABOUT_US p {font-size: medium; font-family: 'RIDIBatang';}
+.ABOUT_US {line-height: 15px; width: 100%; height: 100%; background-color: rgba(127, 255, 212, 0); padding: 0; padding-right: 40px;}
+.ABOUT_US p {font-size: small; font-family: 'RIDIBatang';}
 
-.hf { width: 70%; padding: 0; background-color: rgba(159, 194, 224, 0);}
+.hf { width: 70%; height: 100%; padding: 0; background-color: rgba(159, 194, 224, 0);}
 .hf i {flex-direction: row; font-size: 15px; letter-spacing: 8px;}
 
-.have span {line-height: 40px; font-size: medium;}
+.have span {line-height: 10px; font-size: small;}
 
 .fllow {margin-top: 6vw;}
 .fllow i { font-size: 20px;}
