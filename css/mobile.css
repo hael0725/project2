@@ -1,17 +1,7 @@
 @charset "utf-8";
 
 @media all and (max-width:768px) {
-  header {
-    width: 100%; height: 70px; margin: 0 auto; position: fixed; z-index: 3;
-    background-color: rgb(255, 255, 255); display: flex; justify-content: space-around; position: fixed;
-    }
-.logo {margin-top: 5px;}
-.logo img{width: 90px; height: auto; display: flex; justify-content: center; margin: 0 7%;}
-nav {width: 100%; height: auto; padding-top: 5px; margin-top: 5px;}
-nav ul {display: flex; justify-content: center; align-items: center;}
-nav li {padding: 10px 3%;}
-nav a { color: rgb(137, 14, 14); font-size: 3vw; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
-nav a:hover {color: red;}
+  
 /* 메인 슬라이더*/
 #main .swiper { width: 100%; height: auto;}
 #main .swiper-slide {margin-top: 70px; text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
@@ -23,10 +13,10 @@ nav a:hover {color: red;}
 #Check {margin: 0 auto; width: 100%; height: 100%; margin-top: 50px;}
 #product {width: 100%; height: auto;  display: flex;  margin-bottom: 50px;}
 #product img {width: 100%; padding: 0 30px; margin: 0;}
-#Check h2 {margin: 0 auto; width: 350px; height: 45px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 35px; line-height: 45px; font-weight: lighter;}
+#Check h2 {margin: 0 auto; width: 80%; height: 45px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 25px; line-height: 45px; font-weight: lighter;}
 #button {background-color: rgba(253, 253, 253, 0); margin: 30px; text-align: center;}
 #button span {color: white;}
-#button button {border: none; font-size: 13px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer; background-color: rgba(0, 255, 255, 0);}
+#button button {border: none; font-size: 13px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 4px; color: white; cursor: pointer; background-color: rgba(0, 255, 255, 0);}
 #button button:hover {text-decoration: underline;}
 #button #b1 {text-decoration: underline;}
 
@@ -47,7 +37,7 @@ nav a:hover {color: red;}
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 400px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -65,8 +55,8 @@ nav a:hover {color: red;}
     font-weight: bold;
     color: #fff;
   }
- #pr p {font-family: Georgia, 'Times New Roman', Times, serif; color: #fff; font-size: 20px; margin-top: 10px;}
- #pr span {color: #fff; font-family: 'Times New Roman', Times, serif;}
+ #pr p {font-family: Georgia, 'Times New Roman', Times, serif; color: #fff; font-size: 15px; margin-top: 10px;}
+ #pr span {color: #fff; font-family: 'Times New Roman', Times, serif; font-size: 15px;}
  #pr h2 {width: 650px; height: 100%; text-align: center; border: 1px solid #fff; font-size: 25px;margin: 0 15vw; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-weight: lighter;}
  #pr .swiper img {height: 105%;}
 
@@ -81,8 +71,8 @@ nav a:hover {color: red;}
 
 /* 리뷰 */
 .review_img{width:100%; height: auto; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px;}
-#review h2{color: rgb(255, 255, 255); font-family: Georgia; font-style: italic;font-size: 25px;}
-#review {width: 90%; height: 100vw; margin: 0 auto; background-image: url(../img/back.jpg);  background-attachment: fixed; background-repeat: no-repeat; display: flex;  background-size: cover; background-position: 50%; align-items: center; justify-content: center; flex-direction: column; border-radius: 20px;}
+#review h2{color: rgb(255, 255, 255); font-family: Georgia; font-style: italic;font-size: 25px; margin-top: 20px;}
+#review {width: 90%; height: auto; margin: 0 auto; background-image: url(../img/back.jpg);  background-attachment: fixed; background-repeat: no-repeat; display: flex;  background-size: cover; background-position: 50%; align-items: center; justify-content: center; flex-direction: column; border-radius: 20px;}
 #review p{color:#fff; font-size:14px; text-align: center; line-height: 170%;}
 .radio{ width:60px; display: flex; justify-content: space-around; margin:30px;}
 .radio .ra{width:9px; height: 8px; border-radius: 70px; display: block;}
@@ -97,19 +87,5 @@ nav a:hover {color: red;}
 
 
 
-/* 푸터 */
-footer {width: 100%; height: auto; background-color: #f7f7f7; margin-top: 150px;}
-.footer_box {margin: 0 auto; width: 100%; height: 90%; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 80px 30px; display: flex;}
-.footer_box h1 {font-family: 'Times New Roman', Times, serif; margin: 15px 0; font-size: larger;}
 
-.ABOUT_US {line-height: 15px; width: 100%; height: 100%; background-color: rgba(127, 255, 212, 0); padding: 0; padding-right: 40px;}
-.ABOUT_US p {font-size: small; font-family: 'RIDIBatang';}
-
-.hf { width: 70%; height: 100%; padding: 0; background-color: rgba(159, 194, 224, 0);}
-.hf i {flex-direction: row; font-size: 15px; letter-spacing: 8px;}
-
-.have span {line-height: 10px; font-size: small;}
-
-.fllow {margin-top: 6vw;}
-.fllow i { font-size: 20px;}
 }

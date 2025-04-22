@@ -2,16 +2,6 @@
 
 @media all and (min-width:1440px){
 
-header {
-    width: 100%; height: 80px; margin: 0 auto;position: fixed; z-index: 3;
-    background-color: rgb(255, 255, 255); display: flex; justify-content: space-around; position: fixed;
-    }
-.logo img{width: 130px; height: 80px; display: flex; justify-content: center;}
-nav {width: 660px; height: 60px; padding-top: 10px; margin-top: 10px;}
-nav ul {display: flex; justify-content: center; align-items: center;}
-nav li {padding: 10px 20px;}
-nav a { color: rgb(137, 14, 14); font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
-nav a:hover {color: red;}
 
 /* 메인 슬라이더*/
 #main .swiper { width: 100%; height: 100%;}
@@ -97,21 +87,6 @@ nav a:hover {color: red;}
   .ra{background-color: white;}
     
   #btn1 {background-color: rgb(137, 14, 14);}
-
-
-  /* 푸터 */
-  footer {width: 100%; height: 550px; background-color: #f7f7f7; margin-top: 150px;}
-  .footer_box {margin: 0 auto; width: 1600px; height: 550px; background-color: rgba(250, 235, 215, 0); margin: 0 auto; color: rgb(137, 14, 14); padding: 100px; display: flex;}
-  .footer_box h1 {font-family: 'Times New Roman', Times, serif; margin: 15px 0;}
-  
-  .ABOUT_US {line-height: 30px; width: 800px; background-color: rgba(127, 255, 212, 0); padding: 0 80px;}
-  .ABOUT_US p {font-size: 18px; font-family: 'RIDIBatang'; letter-spacing: 2px;}
-
-  .hf { width: 600px; padding: 0 100px; background-color: rgba(240, 248, 255, 0);}
-  .hf i {flex-direction: row; font-size: 15px; letter-spacing: 8px;}
-
-  .have span {line-height: 50px;}
-
-  .fllow {margin-top: 50px;}
-  .fllow i { font-size: 25px;}
 }
+
+  
