@@ -17,7 +17,7 @@
 #Check h2 {margin: 0 auto; width: 450px; height: 55px; text-align: center; border: 1px solid #fff;font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; color: white; font-size: 45px; font-weight: lighter;}
 #button { margin: 30px; }
 #button span {color: white;}
-#button button {border: none; font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer;}
+#button button {border: none; font-size: 18px; font-family: Georgia, 'Times New Roman', Times, serif; padding: 0px 20px; color: white; cursor: pointer; background-color: #ffffff00;}
 #button button:hover {text-decoration: underline;}
 #button #b1 {text-decoration: underline;}
 
