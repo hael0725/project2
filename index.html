@@ -10,16 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-  
   <link rel="stylesheet" href="./css/common.css">  
   <link rel="stylesheet" href="./css/mobile.css">
   <link rel="stylesheet" href="./css/tablet.css">
   <link rel="stylesheet" href="./css/main.css">
 
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+  <script src="./js/tab.js"></script>
+  <script src="./js/reviewfadein.js"></script>
 </head>
 
 <body>
@@ -30,14 +30,15 @@
     <nav>
       <ul>
         <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
+        <li><a href="sub.html">Service</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="https://www.instagram.com/hwaryugwan/?img_index=1">Insta</a></li>
         <li><a href="http://pf.kakao.com/_xgbxkxcK">Reserve</a></li>
       </ul>
     </nav>
   </header>
-  <section id="main">
+
+  <div id="main">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="img/main1.jpg" alt=""></div>
@@ -46,28 +47,7 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper("#main .mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+  </div>
 
   <div id="Check">
     <h2>Check Recent Work</h2>
@@ -93,39 +73,6 @@
         <img src="img/vin1.jpg" alt="">
         <img src="img/vin2.jpg" alt="">
       </div>
-
-      <script>
-
-        $(function () {
-          $('#Check button:nth-of-type(1)').click(function () {
-            $('.color').fadeIn();
-            $('.si').hide();
-            $('.vin').hide();
-
-            $('#b1').css('text-decoration','underline');
-            $('#b2').css('text-decoration','none');
-            $('#b3').css('text-decoration','none');
-          });
-          $('#Check button:nth-of-type(2)').click(function () {
-            $('.si').fadeIn();
-            $('.color').hide();
-            $('.vin').hide();
-
-            $('#b2').css('text-decoration','underline');
-            $('#b1').css('text-decoration','none');
-            $('#b3').css('text-decoration','none');
-          });
-          $('#Check button:nth-of-type(3)').click(function () {
-            $('.vin').fadeIn();
-            $('.color').hide();
-            $('.si').hide();
-
-            $('#b3').css('text-decoration','underline');
-            $('#b1').css('text-decoration','none');
-            $('#b2').css('text-decoration','none');
-          });
-        });
-      </script>
     </div>
   </div>
 
@@ -164,16 +111,6 @@
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper("#pr .mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-    });
-  </script>
-
   <div id="about">
     <div class="story">
       <img src="img/about.jpg" alt="">
@@ -210,7 +147,7 @@
       <div class="review_box" id="review_2">
         <img src="img/r2.png" alt="#">
         <p>작가님들 다 너무 친절하시고 사진도 최고예요!!<br>
-          스튜디오 예쁜건 두말하면 입아픕니다(.>_<.) <br>
+          스튜디오 예쁜건 두말하면 입아픕니다! <br>
             조만간 또 예쁜 사진 남기러 가겠습니다!❤️🖤❤️
         </p>
       </div>
@@ -229,40 +166,6 @@
       <div class="ra" id="btn2"> </div>
       <div class="ra" id="btn3"> </div>
     </div>
-    <script>
-      $(function () {
-        $('#btn1').click(function () {
-          $('#review_1').fadeIn();
-          $('#review_2').hide();
-          $('#review_3').hide();
-
-          $('#btn1').css('background-color', 'rgb(137, 14, 14)');
-          $('#btn3').css('background-color', 'white');
-          $('#btn2').css('background-color', 'white');
-
-        });
-
-        $('#btn2').click(function () {
-          $('#review_2').fadeIn();
-          $('#review_1').hide();
-          $('#review_3').hide();
-
-          $('#btn2').css('background-color', 'rgb(137, 14, 14)');
-          $('#btn1').css('background-color', 'white');
-          $('#btn3').css('background-color', 'white');
-        });
-
-        $('#btn3').click(function () {
-          $('#review_3').fadeIn();
-          $('#review_1').hide();
-          $('#review_2').hide();
-
-          $('#btn3').css('background-color', 'rgb(137, 14, 14)');
-          $('#btn1').css('background-color', 'white');
-          $('#btn2').css('background-color', 'white');
-        });
-      });
-    </script>
   </div>
 
   <footer>
@@ -299,6 +202,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/mainswiper.js"></script>
+  <script src="./js/card.js"></script>
 </body>
 
 </html>
