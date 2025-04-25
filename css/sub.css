@@ -4,10 +4,9 @@
 nav li:nth-child(2) a{color: red;}
 nav li:first-child a{color: rgb(137, 14, 14);}
 
-/* 어바웃 스토리 */
-
+/* 스튜디오 안내사항 */
 #about {width: 100%; height: 100%; background-color: #fff; display: flex; align-items: center; justify-content: center;}
-#prev2, #next2 {
+#prev, #next {
     width: 40px;
     height: 40px;
     font-size: 25px;
@@ -19,18 +18,18 @@ nav li:first-child a{color: rgb(137, 14, 14);}
 }
 
 .story {margin: 0 auto; width: 1400px; height: 100%; background-color: rgba(245, 245, 220, 0); display: flex;}
-.story img {width: 823px; height: 972px; object-fit: cover; object-position: 50% 80%;}
+.story img {width: auto; height: 972px; object-fit: cover; object-position: 50% 80%;}
 
 .studio {margin: 0 auto; width: 1400px; height: 100%; background-color: rgba(245, 245, 220, 0); display: flex;}
-.studio img {width: 823px; height: 972px; object-fit: cover; object-position: 50% 80%;}
+.studio img {width: auto; height: 972px; object-fit: cover; object-position: 50% 80%;}
 
 .inpo {margin: 0 auto; width: 1400px; height: 100%; background-color: rgba(245, 245, 220, 0); display: flex;}
-.inpo img {width: 823px; height: 972px; object-fit: cover; object-position: 50% 80%;}
+.inpo img {width: 729px; height: 972px; object-fit: cover; object-position: 50% 80%;}
 
-.text {width: 700px; padding: 300px 92px 0;}
+.text {width: 700px; padding: 275px 92px 0;}
 .text h2 {font-size: 35px; color: rgb(137, 14, 14); font-family: 'KyoboHandwriting2020A'; font-weight: lighter;}
 .text h3 {font-family: 'KyoboHandwriting2020A'; font-weight: 500; font-size: 40px; background-color: rgba(255, 228, 196, 0); padding: 40px 0;}
-.text p {font-size: 20px; line-height: 25px;  letter-spacing: 1.5px; font-family: 'KyoboHandwriting2020A'; letter-spacing: 1px;}
+.text p {font-size: 20px; line-height: 35px;  letter-spacing: 1.5px; font-family: 'KyoboHandwriting2020A'; letter-spacing: 1px;}
 
 .slider-wrap {
   width: 1400px;
@@ -50,12 +49,14 @@ nav li:first-child a{color: rgb(137, 14, 14);}
   height: 100%;
 }
 
-/* #Service {width: 100%; height: 972px; background-color: #fff;}
-.Basic {margin: 0 auto; width: 1400px; height: 100%; background-color: rgb(255, 255, 255); display: flex;}
-.Basic img {width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;}
-.text {padding: 200px 100px;}
-.text h2 {font-size: 45px; color: rgb(137, 14, 14); font-family: 'KyoboHandwriting2020A'; font-weight: lighter;}  
-.text h3 {font-family: 'KyoboHandwriting2020A'; font-weight: 500; font-size: 40px;  padding: 40px 0;}
-.text p {font-size: 20px; line-height: 40px;  letter-spacing: 1.5px; font-family: 'KyoboHandwriting2020A';} */
+/* 서비스 메뉴 */
+#service {width: 1400px; height: auto; background-color: rgb(192, 227, 241); margin: 100px auto;}
+#service h2,.menu { display: flex; justify-content: center;}
 
+#photo {width: 1200px; height: 800px; background-color: antiquewhite; display: flex; margin: 0 auto;}
+#photo img {width: 500px; height: 650px;}
+.text2 {justify-content: center;}
+
+.ba {width: 1200px; height: 800px; background-color: azure; display: flex;}
+.sig,.vin {display: none;}
 }
