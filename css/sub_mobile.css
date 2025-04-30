@@ -1,0 +1,74 @@
+@media all and (max-width:768px) {
+nav li:nth-child(2) a{color: red;}
+nav li:first-child a{color: rgb(137, 14, 14);}
+
+/* 스튜디오 안내사항 */
+#about {width: 100%; height: 100%; background-color: #fff; display: flex; align-items: center;}
+#prev, #next {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+.story img,.studio img, .inpo img {display: none;}
+
+.story {margin: 0 auto; width: 100%; height: 100%; display: flex;}
+.studio {margin: 0 auto; width: 100%; height: 100%;  display: flex;}
+.inpo {margin: 0 auto; width: 100%; height: 100%; display: flex;}
+
+.text {width: auto; padding: 16vw 5vw 50px;}
+.text h2 {font-size: 27px; color: rgb(137, 14, 14); font-family: 'KyoboHandwriting2020A'; font-weight: lighter;}
+.text h3 {font-family: 'KyoboHandwriting2020A'; font-weight: 500; font-size: 30px; padding: 20px 0;}
+.text p {font-size: 18px; line-height: 20px;  letter-spacing: 1.5px; font-family: 'KyoboHandwriting2020A'; letter-spacing: 1px;}
+
+.slider-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  transition: margin-left 1s;
+}
+
+.page {
+  width: 100%;
+  flex-shrink: 0;
+  height: auto;
+}
+
+/* 서비스 메뉴 */
+#service {width: 97%; height: auto; margin: 50px auto; border: 4px solid #fff; border-radius: 20px;}
+#service h2,.menu, .menu2 { display: flex; justify-content: center; font-family: Georgia; color: #fff;  gap: 20px;}
+#service h2 {font-size: 9vw; margin-top: 50px;}
+
+.menu {margin: 40px 0;}
+.menu button {margin: 0 20px; color: #fff; background-color: #ffffff00; border: none; font-size: 3vw;  font-family: Georgia; cursor: pointer; position: relative;}
+.menu .m1::after,.menu .m2::after {content: "|"; position: absolute; right: -33px; top: 0;}
+.menu .active {text-decoration: underline;}
+
+#photo,#OTHER {width: auto; height: auto; display: flex; justify-content: center;}
+#photo img ,#OTHER img {width: 100%; height: 400px; padding: 10px; object-fit: cover;  border-radius: 100px; }
+#photoall {margin: 80px 0; height: 100%;}
+.text2 {margin: 15px; color: #fff;}
+.text2 p {line-height: 1.5; margin-top: 10px; font-size: 2.7vw;}
+.text2 h3 {font-size: 5vw; font-family: Georgia, 'Times New Roman', Times, serif;}
+
+.product ,.food, .ba, .sig,.vin {width: 100%; height: auto; display: flex; flex-wrap: wrap; }
+.food,.sig,.vin {display: none;}
+
+.product img, .sig img {object-position: 50% 65%;}
+
+/* 오더서비스 */
+#otherall {margin: 100px 0; height: 100%;}
+.menu2 {margin: 40px 0;}
+.menu2 button {margin: 0 20px; color: #fff; background-color: #ffffff00; border: none; font-size: 3vw;  font-family: Georgia; cursor: pointer; position: relative;}
+.menu2 .b1::after{content: "|"; position: absolute; right: -33px; top: 0;}
+.menu2 .active2 {text-decoration: underline;}
+}

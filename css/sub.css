@@ -64,13 +64,13 @@ nav li:first-child a{color: rgb(137, 14, 14);}
 .text2 p {line-height: 2.5; margin-top: 10px;}
 .text2 h3 {font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif;}
 
-.product ,.ba, .sig,.vin {width: 1200px; height: 555px; display: flex; border-radius: 30px;}
+.product, .food, .ba, .sig,.vin {width: 1200px; height: 555px; display: flex;}
 .food,.sig,.vin {display: none;}
 
 .product img, .sig img {object-position: 100% 60%;}
 
 /* 오더서비스 */
-#otherall {margin: 100px;}
+#otherall {margin: 100px 0;}
 .menu2 {margin: 40px 0;}
 .menu2 button {margin: 0 20px; color: #fff; background-color: #ffffff00; border: none; font-size: 20px;  font-family: Georgia; cursor: pointer; position: relative;}
 .menu2 .b1::after{content: "|"; position: absolute; right: -33px; top: 0;}
